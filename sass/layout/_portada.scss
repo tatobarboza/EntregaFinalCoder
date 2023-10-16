@@ -1,0 +1,311 @@
+$colorPrincipal: #548c82;
+$colorSecundario: #452d3d;
+$colorTerciario: #d55d63;
+$colorHeader: #fff9de;
+$colorTextoContraste: #666666;
+@import url('https://fonts.googleapis.com/css2?family=Cabin:ital@1&family=Mohave:wght@700&family=Montserrat:wght@600&family=Poppins:wght@700&display=swap');
+
+@media (max-width:301px) {
+    .portada-sm {
+        object-fit: contain;
+        width: 100%;
+        padding: 5px;
+        border-radius: 5%;
+    }
+    .portada-md {
+        display: none;
+    }
+    .portada-lg {
+        display: none;
+    }
+}
+
+@media (min-width:302px) {
+    .portada-sm {
+        display: none;
+    }
+    .portada-md {
+        object-fit: contain;
+        width: 100%;
+        padding: 5px;
+        border-radius: 5%;
+    }
+    .portada-lg {
+        display: none;
+    }
+}
+
+@media (min-width:529px) {
+    .portada-sm {
+        display: none;
+    }
+    .portada-md {
+        display: none;
+    }
+    .portada-lg {
+        object-fit: fill;
+        width: 100%;
+        display: inline-block;
+        max-width: 1200px;
+        padding: 5px;
+        border-radius: 2%;
+        max-height: 820px;
+    }
+}
+
+.ofertas-seccion {
+    background-color: #ffffff; 
+    width: 100%;
+    text-align: center; 
+    padding: 20px;
+    margin: 10px auto 0px auto;
+}
+
+.ofertas-seccion {
+    h2 {
+        color: $colorTextoContraste; 
+        font-size: 2.2em;
+        font-family: 'Poppins', sans-serif;
+    }
+    p {
+    color: $colorTextoContraste; 
+    font-family: 'Montserrat', sans-serif;
+    }   
+}
+
+.article__div-novedades {
+    display: flex;
+    flex-direction: row;
+    margin: auto;
+    flex-wrap: wrap;
+    justify-content: center;
+    max-width: 1000px;
+    background-color: white;
+    margin-top: 20px;
+    height: auto;
+    div {
+        align-content: center;
+    }
+    &:hover {
+        box-shadow: #393939 0px 1px 5px;
+    }
+    
+    .div-zapato-individual {
+        border: solid 1px black;
+        margin: 50px 10px;
+        border-radius: 0px;
+        transition: box-shadow 0.3s ease;
+        background-color: white;
+        justify-content: center;
+        display: flex;
+        flex-direction: column;
+        &:hover {
+            box-shadow: 0 0 10px 5px #cbcbcb;
+            scale: 1.1;
+        }
+        div a img {
+            min-width: 100px;
+            max-width: 200px;
+    
+        }
+        div a img{
+            padding: 10px;
+        }
+        div a .span-zapato{
+            margin-left: 5px;
+        }
+        div .span-zapato{
+            margin-left: 5px;
+            margin-right: 5px;
+            padding: 0px 10px;
+        }
+        div a .span-zapato-tittle {
+            font-size: 20px;
+            font-weight: bold;
+            font-family: 'Montserrat', sans-serif;
+            &:hover{
+                color: black;
+            }
+            &:link {
+                color: gray;
+            }
+            &:visited {
+                color:gray
+            }
+            color:rgb(128, 128, 128);
+        }
+        div .span-zapato-precio {
+            font-size: 20px;
+            font-family: 'Poppins', sans-serif;
+        }
+        div .span-zapato-cuotas {
+            font-size: 12px;
+        }
+        div .span-zapato-enviogratis {
+            background-color: red;
+            border-radius: 5px;
+            color: white;
+            margin-bottom: 10px;
+            margin-left: 15px;
+            text-align: center;
+            line-height: 30px;
+            font-family: 'Montserrat', sans-serif;
+        }
+    }
+    
+}
+@media (min-width:640px) and (max-width:887px) {
+    .article__div-novedades {
+        .div-zapato-individual {
+            margin: 15px 50px;
+        }
+    }
+}
+@media (min-width:350px) and (max-width:640px) {
+    .article__div-novedades {
+        .div-zapato-individual {
+            margin: 10px 15px;
+        }
+    }
+}
+@media (min-width:410px) and (max-width:464px) {
+    .article__div-novedades {
+        .div-zapato-individual {
+            margin: 10px 5px;
+        }
+    }
+}
+@media (min-width:850px) and (max-width:890px) {
+    .article__div-novedades {
+        .div-zapato-individual {
+            margin: 10px 5px;
+        }
+    }
+}
+@media (max-width:350px) {
+    .article__div-novedades {
+        .div-zapato-individual {
+            margin: 10px 5px;
+        }
+    }
+}
+@media (min-width:490px) and (max-width:844px) {
+    .article__div-novedades {
+        margin: 15px 15px;
+        .div-zapato-individual {
+            margin-top: 15px;
+            margin-bottom: 15px;
+        }
+    }
+}
+
+@media (min-width:206px) and (max-width:422px) {
+    .article__div-novedades {
+        margin: 15px 10px;
+    }
+}
+
+
+.formulario {
+    max-width: 1200px;
+    margin: 50px auto;
+    text-align: center;
+    h3 {
+        font-family: 'Poppins', sans-serif;
+        font-size: 15px;
+        
+    }
+}
+
+@media (min-width:150px) and (max-width:300px) {
+    .formulario {
+        margin-top: 50px 10px;
+        form input {
+            margin-top: 10px;
+        }
+    }
+}
+
+@media (min-width:150px) and (max-width:500px) {
+    .formulario {
+        margin: 30px 10px;
+    }
+}
+
+footer{
+    background-color: #393939;
+    .afip-mediosdepago {
+        .afip-icon {
+            font-size: 1em;
+        }
+        .mediosdepago {
+            border-radius: 5px;
+            margin: auto;
+            padding: 3px 5px 5px;
+            font-size: 0.4em;
+            font-family: 'Montserrat', sans-serif;
+            max-width: 1200px;
+            text-align: center;
+            opacity: .5;
+            h3 {
+                color: rgb(160, 160, 160);
+                font-size: 2.5em;
+                opacity: 2;
+                text-transform: uppercase;
+            }
+            .mediosdepago-icon {
+                opacity: .5;
+                width: 40px;
+                height: 20px;
+                display: inline;
+                text-align: center;
+                margin: 10px 10px;
+                img {
+                    margin-right: 10pxq;
+                }
+            }
+        }
+
+    }
+    .secciones-footer div {
+        max-width: 1200px;
+        font-size: 0.7em;
+        text-align: center;
+        margin: auto;
+        ul {
+            padding-left: 0px;
+            margin: 5px 10px;
+        }
+        
+        ul li {
+            text-decoration: none;
+            list-style-type: none;
+            display: inline;
+            text-transform: uppercase;
+            font-family: 'Montserrat', sans-serif;
+            margin: 2px 5px;
+            a {
+                &:link {
+                    color: white;
+                    opacity: .8;
+                }
+                &:visited {
+                    color: white;
+                    opacity: .8;
+                    }
+            }
+        }
+    }
+    .copyright-footer {
+        font-size: 0.9em;
+        max-width: 1200px;
+        text-align: center;
+        margin: auto;
+        color: #a1a1a1;
+        p {
+            margin: 5px 10px;
+        }
+    }
+}
+
+
