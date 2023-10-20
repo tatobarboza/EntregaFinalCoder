@@ -1,0 +1,600 @@
+@import url('https://fonts.googleapis.com/css2?family=Cabin:ital@1&family=Mohave:wght@700&family=Montserrat:wght@600&family=Poppins:wght@700&family=Work+Sans:wght@200;500&display=swap');
+
+.site-map {
+    display: inline;
+    font-family: 'Work Sans', sans-serif;
+    font-weight: 200;
+    margin-left: 5px;
+    &:link {
+        color: gray;
+    }
+    &:active {
+        color:gray;
+    }
+    &:visited {
+        color: gray;
+    }
+    &:hover {
+        color: rgb(17, 17, 17);
+    }
+    
+}
+.site-map-active {
+    font-family: 'Work Sans', sans-serif;
+    font-weight: 500;
+    &:link {
+        color: black;
+    }
+    &:visited {
+        color: black;
+    }
+    &:hover {
+        color:rgb(77, 77, 77);
+    }
+}
+.configuraciones-generales-zapatos {
+    max-width: 1200px;
+    margin: auto;
+    border-left: 3px 1px rgb(110, 110, 110);
+    border-right: 3px 1px solid rgb(110, 110, 110);
+    border-radius: 2%;
+    display: flex;
+    flex-direction: row;
+}
+.div-container {
+    flex-wrap: wrap;
+    flex-direction: row;
+    display: flex;
+    justify-content: end;
+    .div-filtros {
+        display: flex;
+        margin-right: 10px;
+        .span-filtros {
+            margin: 2px;
+            margin-right: 20px;
+            padding-top: 12px;
+
+        }
+        .span-color {
+            margin: 2px;
+            margin-right: 5px;
+        }
+        .span-ordenar {
+            margin: 2px;
+            margin-right: 5px;
+        }
+    }
+}
+article {
+    display: flex;
+    flex-flow: row wrap;
+}
+.productos {
+    margin-top: 30px;
+    justify-content: center;
+    .div-tarjetaproducto {
+        background-color: white;
+        max-width: 270px;
+        display: flex;
+        flex-direction: column;
+        min-width: 150px;
+        border-radius: 3%;
+        width: 300px;
+        margin: 10px 15px;
+        &:hover {
+            box-shadow: 0 0 10px 5px #cbcbcb;
+            scale: 1.1;
+            transition: 100ms;
+            cursor:pointer;
+        }
+        div {
+            margin: auto;
+            i {
+                position: relative;
+                top: 10px;
+                right: -230px;
+                visibility: visible;
+                size: 30px;
+            }
+            .img-tarjeta {
+                min-width: 150px;
+                max-width: 250px;
+                
+            }
+            
+        }
+        .div-tittle{
+            color: gray;
+            font-weight: 500;
+            font-family: 'Montserrat', sans-serif;
+            font-size: 1.5em;
+            margin: 0 15px;
+            text-align: center;
+            border-top: 1px solid rgb(207, 207, 207);
+            text-shadow: 1px 0.5px 0.5px;
+        }
+        .div-precio{
+            color: rgb(1, 1, 1);
+            font-weight: 500;
+            font-family: 'Poppins', sans-serif;
+            font-size: 1.5em;
+            text-align: center;
+        }
+
+        .div-agregar-carrito {
+            text-align: center;
+            font-size: 15px;
+            font-family: 'Work Sans', sans-serif;
+            background: rgb(255, 150, 101);
+            color: rgb(0, 0, 0);
+            margin: 5px 55px;
+            border-radius: 10%;
+            line-height: 35px;
+            margin-bottom: 15px;
+            &:hover {
+                box-shadow: 0 0 10px 5px #fff1f1;
+                scale: 1.1;
+                cursor:pointer;
+                transition: 250ms;
+            }
+        }
+        
+    }
+    
+}
+.configuraciones-generales h3 {
+    margin: 50px 0px 50px 
+}
+
+@media (min-width:1080px) and (max-width:1200px) {
+    .productos {
+        margin-top: 30px;
+        justify-content: center;
+        .div-tarjetaproducto {
+            background-color: white;
+            max-width: 250px;
+            display: flex;
+            flex-direction: column;
+            min-width: 150px;
+            border-radius: 3%;
+            width: 250px;
+            margin: 10px 10px;
+            &:hover {
+                box-shadow: 0 0 10px 5px #cbcbcb;
+                scale: 1.1;
+                transition: 100ms;
+                cursor:pointer;
+            }
+            div {
+                margin: auto;
+                i {
+                    position: relative;
+                    top: 10px;
+                    right: -220px;
+                    visibility: visible;
+                    size: 30px;
+                }
+                .img-tarjeta {
+                    min-width: 150px;
+                    max-width: 250px;
+                    
+                }
+                
+            }
+            .div-tittle{
+                color: gray;
+                font-weight: 500;
+                font-family: 'Montserrat', sans-serif;
+                font-size: 1.2em;
+                margin: 0 15px;
+                text-align: center;
+                border-top: 1px solid rgb(207, 207, 207);
+                text-shadow: 1px 0.5px 0.5px;
+            }
+            .div-precio{
+                color: rgb(1, 1, 1);
+                font-weight: 500;
+                font-family: 'Poppins', sans-serif;
+                font-size: 1.2em;
+                text-align: center;
+            }
+    
+            .div-agregar-carrito {
+                text-align: center;
+                font-size: 12px;
+                font-family: 'Work Sans', sans-serif;
+                background: rgb(255, 150, 101);
+                color: rgb(0, 0, 0);
+                margin: 5px 55px;
+                border-radius: 10%;
+                line-height: 35px;
+                margin-bottom: 15px;
+                &:hover {
+                    box-shadow: 0 0 10px 5px #fff1f1;
+                    scale: 1.1;
+                    cursor:pointer;
+                    transition: 250ms;
+                }
+            }
+            
+        }
+        
+    }
+    
+    .div-filtros {
+        margin-right: 20px;
+    }    
+}
+@media (min-width:970px) and (max-width:1080px) {
+    .productos {
+        margin-top: 30px;
+        justify-content: center;
+        .div-tarjetaproducto {
+            background-color: white;
+            max-width: 220px;
+            display: flex;
+            flex-direction: column;
+            min-width: 150px;
+            border-radius: 3%;
+            width: 220px;
+            margin: 10px 8px;
+            &:hover {
+                box-shadow: 0 0 10px 5px #cbcbcb;
+                scale: 1.1;
+                transition: 100ms;
+                cursor:pointer;
+            }
+            div {
+                margin: auto;
+                i {
+                    position: relative;
+                    top: 10px;
+                    right: -190px;
+                    visibility: visible;
+                    size: 30px;
+                }
+                .img-tarjeta {
+                    min-width: 150px;
+                    max-width: 220px;
+                    
+                }
+                
+            }
+            .div-tittle{
+                color: gray;
+                font-weight: 500;
+                font-family: 'Montserrat', sans-serif;
+                font-size: 1.2em;
+                margin: 0 15px;
+                text-align: center;
+                border-top: 1px solid rgb(207, 207, 207);
+                text-shadow: 1px 0.5px 0.5px;
+            }
+            .div-precio{
+                color: rgb(1, 1, 1);
+                font-weight: 500;
+                font-family: 'Poppins', sans-serif;
+                font-size: 1.2em;
+                text-align: center;
+            }
+    
+            .div-agregar-carrito {
+                text-align: center;
+                font-size: 10px;
+                font-family: 'Work Sans', sans-serif;
+                background: rgb(255, 150, 101);
+                color: rgb(0, 0, 0);
+                margin: 5px 55px;
+                border-radius: 10%;
+                line-height: 35px;
+                margin-bottom: 15px;
+                &:hover {
+                    box-shadow: 0 0 10px 5px #fff1f1;
+                    scale: 1.1;
+                    cursor:pointer;
+                    transition: 250ms;
+                }
+            }
+            
+        }
+        
+    }
+}
+@media (min-width:840px) and (max-width:970px) {
+    .productos {
+        margin-top: 30px;
+        justify-content: center;
+        .div-tarjetaproducto {
+            background-color: white;
+            max-width: 400px;
+            display: flex;
+            flex-direction: column;
+            min-width: 150px;
+            border-radius: 3%;
+            width: 400px;
+            margin: 10px 8px;
+            &:hover {
+                box-shadow: 0 0 10px 5px #cbcbcb;
+                scale: 1.1;
+                transition: 100ms;
+                cursor:pointer;
+            }
+            div {
+                margin: auto;
+                i {
+                    position: relative;
+                    top: -145px;
+                    right: -340px;
+                    visibility: visible;
+                    size: 30px;
+                }
+                .img-tarjeta {
+                    min-width: 150px;
+                    max-width: 350px;
+                    
+                }
+                
+            }
+            .div-tittle{
+                color: gray;
+                font-weight: 500;
+                font-family: 'Montserrat', sans-serif;
+                font-size: 1.5em;
+                margin: 0 15px;
+                text-align: center;
+                border-top: 1px solid rgb(207, 207, 207);
+                text-shadow: 1px 0.5px 0.5px;
+            }
+            .div-precio{
+                color: rgb(1, 1, 1);
+                font-weight: 500;
+                font-family: 'Poppins', sans-serif;
+                font-size: 1.5em;
+                text-align: center;
+            }
+    
+            .div-agregar-carrito {
+                text-align: center;
+                font-size: 15px;
+                font-family: 'Work Sans', sans-serif;
+                background: rgb(255, 150, 101);
+                color: rgb(0, 0, 0);
+                margin: 5px 55px;
+                border-radius: 10%;
+                line-height: 35px;
+                margin-bottom: 15px;
+                &:hover {
+                    box-shadow: 0 0 10px 5px #fff1f1;
+                    scale: 1.1;
+                    cursor:pointer;
+                    transition: 250ms;
+                }
+            }
+            
+        }
+        
+    }
+}
+
+@media (min-width:840px) and (max-width:970px) {
+    .productos {
+        margin-top: 30px;
+        justify-content: center;
+        .div-tarjetaproducto {
+            background-color: white;
+            max-width: 400px;
+            display: flex;
+            flex-direction: column;
+            min-width: 150px;
+            border-radius: 3%;
+            width: 400px;
+            margin: 10px 8px;
+            &:hover {
+                box-shadow: 0 0 10px 5px #cbcbcb;
+                scale: 1.1;
+                transition: 100ms;
+                cursor:pointer;
+            }
+            div {
+                margin: auto;
+                i {
+                    position: relative;
+                    top: -145px;
+                    right: -340px;
+                    visibility: visible;
+                    size: 30px;
+                }
+                .img-tarjeta {
+                    min-width: 150px;
+                    max-width: 350px;
+                    
+                }
+                
+            }
+            .div-tittle{
+                color: gray;
+                font-weight: 500;
+                font-family: 'Montserrat', sans-serif;
+                font-size: 1.5em;
+                margin: 0 15px;
+                text-align: center;
+                border-top: 1px solid rgb(207, 207, 207);
+                text-shadow: 1px 0.5px 0.5px;
+            }
+            .div-precio{
+                color: rgb(1, 1, 1);
+                font-weight: 500;
+                font-family: 'Poppins', sans-serif;
+                font-size: 1.5em;
+                text-align: center;
+            }
+    
+            .div-agregar-carrito {
+                text-align: center;
+                font-size: 15px;
+                font-family: 'Work Sans', sans-serif;
+                background: rgb(255, 150, 101);
+                color: rgb(0, 0, 0);
+                margin: 5px 55px;
+                border-radius: 10%;
+                line-height: 35px;
+                margin-bottom: 15px;
+                &:hover {
+                    box-shadow: 0 0 10px 5px #fff1f1;
+                    scale: 1.1;
+                    cursor:pointer;
+                    transition: 250ms;
+                }
+            }
+            
+        }
+        
+    }
+}
+@media (min-width:400px) and (max-width:600px) {
+    .productos {
+        margin-top: 30px;
+        justify-content: center;
+        .div-tarjetaproducto {
+            background-color: white;
+            max-width: 400px;
+            display: flex;
+            flex-direction: column;
+            min-width: 150px;
+            border-radius: 3%;
+            width: 400px;
+            margin: 10px 8px;
+            &:hover {
+                box-shadow: 0 0 10px 5px #cbcbcb;
+                scale: 1.1;
+                transition: 100ms;
+                cursor:pointer;
+            }
+            div {
+                margin: auto;
+                i {
+                    position: relative;
+                    top: -145px;
+                    right: -340px;
+                    visibility: visible;
+                    size: 30px;
+                }
+                .img-tarjeta {
+                    min-width: 50px;
+                    max-width: 350px;
+                    
+                }
+                
+            }
+            .div-tittle{
+                color: gray;
+                font-weight: 500;
+                font-family: 'Montserrat', sans-serif;
+                font-size: 1.5em;
+                margin: 0 15px;
+                text-align: center;
+                border-top: 1px solid rgb(207, 207, 207);
+                text-shadow: 1px 0.5px 0.5px;
+            }
+            .div-precio{
+                color: rgb(1, 1, 1);
+                font-weight: 500;
+                font-family: 'Poppins', sans-serif;
+                font-size: 1.5em;
+                text-align: center;
+            }
+    
+            .div-agregar-carrito {
+                text-align: center;
+                font-size: 15px;
+                font-family: 'Work Sans', sans-serif;
+                background: rgb(255, 150, 101);
+                color: rgb(0, 0, 0);
+                margin: 5px 55px;
+                border-radius: 10%;
+                line-height: 35px;
+                margin-bottom: 15px;
+                &:hover {
+                    box-shadow: 0 0 10px 5px #fff1f1;
+                    scale: 1.1;
+                    cursor:pointer;
+                    transition: 250ms;
+                }
+            }
+            
+        }
+        
+    }
+}
+@media (min-width:150px) and (max-width:970px) {
+    .div-container {
+        flex-wrap: wrap;
+        flex-direction: column;
+        display: flex;
+        justify-content: center;
+        align-content: end;
+        margin-right: 30px;
+        .div-filtros {
+            margin-top: 20px;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: end;
+            .span-filtros {
+                margin: 1px 5px;
+            }
+            .span-color {
+                margin: 2px;
+                margin-right: 65px;
+                max-width: 100px;
+            }
+            .span-ordenar {
+                margin-right: 5px;
+                select {
+                    max-width: 100px;
+                }
+            }
+        }
+    }
+}
+@media (min-width:500px) and (max-width:970px) {
+    .div-container {
+        .div-filtros {
+            .span-filtros {
+                margin-right: 22px;
+            }
+            .span-color {
+                margin: 2px;
+                margin-right: 20px;
+                max-width: 420px;
+            }
+            .span-ordenar {
+                margin-right: 20px;
+                select {
+                    max-width: 300px;
+                }
+            }
+        }
+    }
+}
+.filtros-group {
+	display: flex;
+	align-items: center;
+	gap: 20px;
+	margin-bottom: 10px;
+}
+
+.filtros-group label {
+	width: 100px;
+	color: #222;
+	font-weight: 700;
+}
+
+.filtros-group select {
+	width: 300px;
+	border: none;
+	padding: 12px 15px;
+	background-color: #f7f7f7;
+	outline: none;
+	color: #666;
+}

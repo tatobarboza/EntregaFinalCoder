@@ -11,6 +11,7 @@ $colorTextoContraste: #666666;
         width: 100%;
         padding: 5px;
         border-radius: 5%;
+        cursor: pointer;
     }
     .portada-md {
         display: none;
@@ -18,6 +19,7 @@ $colorTextoContraste: #666666;
     .portada-lg {
         display: none;
     }
+    
 }
 
 @media (min-width:302px) {
@@ -29,6 +31,7 @@ $colorTextoContraste: #666666;
         width: 100%;
         padding: 5px;
         border-radius: 5%;
+        cursor: pointer;
     }
     .portada-lg {
         display: none;
@@ -50,6 +53,7 @@ $colorTextoContraste: #666666;
         padding: 5px;
         border-radius: 2%;
         max-height: 820px;
+        cursor: pointer;
     }
 }
 
@@ -101,7 +105,8 @@ $colorTextoContraste: #666666;
         flex-direction: column;
         &:hover {
             box-shadow: 0 0 10px 5px #cbcbcb;
-            scale: 1.1;
+            scale: 1.02;
+            cursor:pointer;
         }
         div a img {
             min-width: 100px;
@@ -232,80 +237,6 @@ $colorTextoContraste: #666666;
     }
 }
 
-footer{
-    background-color: #393939;
-    .afip-mediosdepago {
-        .afip-icon {
-            font-size: 1em;
-        }
-        .mediosdepago {
-            border-radius: 5px;
-            margin: auto;
-            padding: 3px 5px 5px;
-            font-size: 0.4em;
-            font-family: 'Montserrat', sans-serif;
-            max-width: 1200px;
-            text-align: center;
-            opacity: .5;
-            h3 {
-                color: rgb(160, 160, 160);
-                font-size: 2.5em;
-                opacity: 2;
-                text-transform: uppercase;
-            }
-            .mediosdepago-icon {
-                opacity: .5;
-                width: 40px;
-                height: 20px;
-                display: inline;
-                text-align: center;
-                margin: 10px 10px;
-                img {
-                    margin-right: 10pxq;
-                }
-            }
-        }
 
-    }
-    .secciones-footer div {
-        max-width: 1200px;
-        font-size: 0.7em;
-        text-align: center;
-        margin: auto;
-        ul {
-            padding-left: 0px;
-            margin: 5px 10px;
-        }
-        
-        ul li {
-            text-decoration: none;
-            list-style-type: none;
-            display: inline;
-            text-transform: uppercase;
-            font-family: 'Montserrat', sans-serif;
-            margin: 2px 5px;
-            a {
-                &:link {
-                    color: white;
-                    opacity: .8;
-                }
-                &:visited {
-                    color: white;
-                    opacity: .8;
-                    }
-            }
-        }
-    }
-    .copyright-footer {
-        font-size: 0.9em;
-        max-width: 1200px;
-        text-align: center;
-        margin: auto;
-        color: #a1a1a1;
-        p {
-            margin: 5px 10px;
-        }
-    }
-}
 
 
