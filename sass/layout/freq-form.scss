@@ -1,13 +1,3 @@
-.h1-FAQ {
-    font-size: 3em;
-    width: 100%;
-    height: 50px;
-    background-color: #fff3b0;
-    padding-top: 7px;
-    padding-left: 170px;
-    margin-top: 15px;
-    margin-bottom: 37px;
-}
 
 .article-FAQ  {
     margin-top: 20px;
@@ -22,29 +12,21 @@
 
 .textofaq {
     margin-top: 23px;
-    font-size: 1.2em
+    font-size: 1em;
+    b {
+    font-weight: 900;
+    }
 }
 .textomediodepago {
     font-size: 1.2em;
 }
-.p-mediodepago {
+.span-mediodepago {
     display: inline;
     margin: 10px 5px 10px 0px;
     padding: 15px 0px;
 }
 .FAQ-Talles-img {
     max-width: 500px;
-
-}
-
-
-.h1-formulario {
-    height: 50px;
-    margin-top: 15px;
-    padding-left: 110px;
-    padding-top: 10px;
-    background-color: #fff3b0;
-    font-size: 3em;
 }
 
 .formulario-devoluciones {
@@ -52,6 +34,10 @@
     padding: 50px;
     box-shadow: 0px 1px 5px 1px black;
     
+}
+.h1-form {
+    padding-left: 20px;
+    padding-top: 10px;
 }
 .contenedor-formulario {
     max-width: 1200px;
@@ -61,9 +47,10 @@
     font-weight: 500;
 }
 
-.formulario-devoluciones form input,textarea,select,label {
+.formulario-devoluciones form input,textarea,select,label,b {
     font-size: 1em;
     margin-bottom: 10px;
+    font-weight: 500;
 }
 .formulario-devoluciones textarea {
     resize:vertical;
@@ -107,5 +94,44 @@ div .formulario-devoluciones {
         resize:vertical;
         overflow: hidden ;
         max-width: 200px;
+    }
+}
+
+@media (max-width:768px) {
+    .textofaq {
+        font-size: 0.8em;
+    }
+    .FAQ-Talles-img {
+        max-width: 400px;
+    
+    }
+}
+@media (max-width:420px) {
+    .FAQ-Talles-img {
+        max-width: 350px;
+    }
+    .textofaq {
+        font-size: 0.7em;
+    }
+    .span-mediodepago {
+        width: 80px;
+    }
+    
+}
+@media (max-width:370px) {
+    .FAQ-Talles-img {
+        max-width: 300px;
+    }
+}
+@media (max-width:320px) {
+    .FAQ-Talles-img {
+        max-width: 250px;
+    }
+}
+
+@media (max-width:1200px) {
+    .article-FAQ {
+        padding-left: 20px;
+        padding-right: 10px;
     }
 }

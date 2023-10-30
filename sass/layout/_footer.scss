@@ -72,4 +72,51 @@ footer{
             margin: 5px 10px;
         }
     }
-}
+    .redes-footer {
+        max-width: 1200px;
+        text-align: center;
+        color: #a1a1a1;
+        align-items: center;
+        margin: 0px auto;
+        a {
+            i {
+                font-size: 30px;
+            }
+            margin-right: 10px;
+            &:link {
+                color: #666;
+                font-size: 15px;
+            }
+            &:visited {
+            color: #666;
+                font-size: 15px;
+            }
+        }
+
+        a {
+            &:hover {
+                color: rgb(255, 255, 255);
+            }
+            
+        }
+    }
+    .redes-sociales-text {
+        .div-h3 {
+            border-radius: 5px;
+            margin: auto;
+            padding: 3px 5px 5px;
+            font-size: 0.4em;
+            font-family: 'Montserrat', sans-serif;
+            max-width: 1200px;
+            text-align: center;
+            opacity: .5;
+            h3.h3-redes {
+                color: rgb(160, 160, 160);
+                font-size: 2.5em;
+                opacity: 2;
+                text-transform: uppercase;
+            }
+        }
+    }
+} 
+

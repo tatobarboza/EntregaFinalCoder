@@ -8,3 +8,20 @@
 body {
     background-color: #ebebeb;
 }
+.whatsapp-iconimage {
+    max-width: 50px;
+    position: fixed;
+    bottom: 5px;
+    left: 10px;
+    }
+
+@media (min-width:520px) {
+    .whatsapp-iconimage {
+    max-width: 60px;
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    left: auto;
+    }
+}
+    

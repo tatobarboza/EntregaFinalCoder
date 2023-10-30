@@ -221,7 +221,14 @@ main {
 	margin-top: 30px;
 	margin-bottom: 30px;
 }
-@media (max-width:1200px) { 
+.h3-articulo {
+	margin: auto;
+	max-width: 1200px;
+	border-left: 3px 1px rgb(110, 110, 110);
+	border-right: 3px 1px solid rgb(110, 110, 110);
+	border-radius: 2%;
+}
+@media (max-width:1230px) { 
 	.articulo {
 		display: flex;
 		flex-direction: row;
@@ -232,8 +239,12 @@ main {
 		}
 		
 	}
-	h3{
+	.h3-articulo {
 		margin-left: 30px;
+		max-width: 1200px;
+    	border-left: 3px 1px rgb(110, 110, 110);
+    	border-right: 3px 1px solid rgb(110, 110, 110);
+    	border-radius: 2%;
 	}
 }
 @media (max-width:1150px) { 
