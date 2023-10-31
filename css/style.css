@@ -99,7 +99,7 @@ header {
     left: 320px;
   }
 }
-@media (min-width: 992px) and (max-width: 1100px) {
+@media (min-width: 992px) and (max-width: 1120px) {
   .navbar-nav {
     font-size: 0.8em;
   }
@@ -620,6 +620,7 @@ footer .redes-sociales-text .div-h3 h3.h3-redes {
   right: -230px;
   visibility: visible;
   size: 30px;
+  color: black;
 }
 .productos .div-tarjetaproducto div .img-tarjeta {
   min-width: 150px;
@@ -1471,12 +1472,14 @@ main {
   font-size: 1em;
   margin-bottom: 10px;
   font-weight: 500;
+  padding: 2px;
 }
 
 .formulario-devoluciones textarea {
   resize: vertical;
   overflow: hidden;
   max-width: 800px;
+  padding: 5px;
 }
 
 div .formulario-devoluciones {
@@ -1551,6 +1554,73 @@ div .formulario-devoluciones {
     padding-left: 20px;
     padding-right: 10px;
   }
+}
+.articleerror404 {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 80vh;
+  margin: 0;
+  background-color: #fbfbfb;
+}
+.articleerror404 .error-container {
+  text-align: center;
+}
+.articleerror404 a {
+  text-decoration: none;
+}
+.articleerror404 .btn-volver {
+  margin-top: 30px;
+}
+.articleerror404 .btn-volver a {
+  font-size: 20px;
+  color: black;
+  border: 0.5px solid rgb(87, 87, 87);
+  padding: 10px;
+  border-radius: 10%;
+  transition: 300ms;
+}
+.articleerror404 .btn-volver a:hover {
+  transition: 150ms;
+  color: rgb(255, 255, 255);
+  background-color: rgb(109, 109, 109);
+  border-bottom: 1px solid rgb(87, 87, 87);
+  border-right: 1px solid rgb(87, 87, 87);
+  padding: 5px;
+  border-radius: 10%;
+}
+.articleerror404 .btn-volver a:active {
+  color: black;
+}
+.articleerror404 .btn-volver a:link {
+  color: black;
+}
+
+.loading-dot {
+  width: 20px;
+  height: 20px;
+  background-color: black;
+  border-radius: 50%;
+  animation: moveDot 2s infinite ease-in-out;
+}
+
+@keyframes moveDot {
+  0%, 100% {
+    transform: translateX(-100%);
+  }
+  50% {
+    transform: translateX(100%);
+  }
+}
+.brand-dmg {
+  font-size: 3em;
+  font-family: "Cabin", sans-serif;
+  color: rgb(0, 0, 0);
+}
+.brand-dmg:hover {
+  transition: 500ms;
+  color: rgb(252, 125, 6);
 }
 
 /*# sourceMappingURL=style.css.map */

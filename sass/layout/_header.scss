@@ -88,7 +88,7 @@ header {
     }
 }
 
-@media (min-width:992px) and (max-width:1100px) {
+@media (min-width:992px) and (max-width:1120px) {
     .navbar-nav {
     font-size: 0.8em;
     }
@@ -105,8 +105,8 @@ header {
         color: gray;
     }
 }
+
 @media (max-width:400px) {
-    
     .navbar-brand {
         font-size: 2rem;
         position: relative;
